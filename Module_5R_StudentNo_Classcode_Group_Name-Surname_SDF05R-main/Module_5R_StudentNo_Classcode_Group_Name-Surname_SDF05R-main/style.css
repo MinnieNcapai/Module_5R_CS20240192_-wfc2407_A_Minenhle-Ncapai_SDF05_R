@@ -1,5 +1,5 @@
 body {
-    background: #eeefed;
+    background: rgb(4, 4, 5);
 }
 
 a {
@@ -17,7 +17,7 @@ a {
 h1 {
     position: relative;
     text-align: center;
-    color: #353535;
+    color: #cae8e9;
     font-size: 50px;
     font-family: "Calibri", sans-serif;
 }
@@ -27,14 +27,14 @@ p {
     font-weight: 300;
     text-align: center;
     font-size: 18px;
-    color: #676767;
+    color: #a6b5d6;
     margin-bottom: 40px;
 }
 
 .custom-btn {
     width: 130px;
     height: 40px;
-    color: #000;
+    color: #d2e0e8;
     border-radius: 5px;
     padding: 10px 25px;
     font-family: 'Lato', sans-serif;
@@ -43,7 +43,7 @@ p {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: block;
+    display: block; 
     margin: 0 auto 20px; /* Center and add margin to stack vertically */
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
         7px 7px 20px 0px rgba(0, 0, 0, .1),
@@ -51,4 +51,91 @@ p {
     outline: none;
 }
 
+
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
+.btn-1, .btn-2, .btn-3 {
+    margin: 110px; /* add 110px margin around each button */
+   
+  }
+
+.btn-1 {background-color: rgb(151, 8, 212);
+    color: rgb(2, 44, 46);
+    font-size:  15px;
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+    justify-content: space-between;
+    transform-style: var(rgb(203, 112, 123));
+    transition: transform 0.5s, box-shadow 0.5s; /* add transition effect */
+    border: 2px solid #4a0942
+
+}
+
+.btn-1:hover {
+    background-color: #db3434;
+    border: #440202;
+    border-radius: 50%;
+    padding: 25px 35px;
+    font-size: 16px;
+    animation: pulse 3s infinite;
+
+}
+
+
+.btn-2{
+    background-color:#180ee1;
+    color:rgb(203, 203, 217) ;
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+    justify-content: space-between;
+    font-size: 14px;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+    border: solid 2px rgb(12, 3, 53);
+    transition: border-color 0.5s; /* add transition effect to border color */
+  }
+
+  .btn-2:hover {
+    background-color: #610543;
+    border:solid 2px #a6b5d6;
+    transform: rotateY(50deg)
+  }
+  
+  
+ 
+.btn-3{background-color: rgb(29, 227, 29);
+color: #09054b;
+position: relative;
+border:2px solid lightgreen;
+padding: 25px;
+display: inline-block;
+justify-content: space-between;
+font-size: 15px;
+border: none; /* Remove the default border */
+  border-radius: 7px; /* Add a slight rounded corner */
+  box-shadow: 0 0 20px rgba(8, 249, 24, 0.9); /* Add a glow effect */
+  
+}
+
+.btn-3:hover {
+    background-color: black;
+    color: antiquewhite;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Change the glow color on hover */
+     content: "";
+     background: linear-gradient(
+        45deg,blue,rgb(28, 215, 28),orange,purple,red
+     );
+     position: absolute;
+     z-index: -1px;
+    
+  }
+
+
+  
+  
+  
+  
+  
+ 
+ 
