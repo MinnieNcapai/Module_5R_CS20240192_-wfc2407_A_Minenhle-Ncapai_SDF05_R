@@ -43,8 +43,8 @@ p {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: block; 
-    margin: 0 auto 20px; /* Center and add margin to stack vertically */
+    display: inline-block; 
+    margin: 10 auto 20px; /* Center and add margin to stack vertically */
     box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
         7px 7px 20px 0px rgba(0, 0, 0, .1),
         4px 4px 5px 0px rgba(0, 0, 0, .1);
@@ -54,18 +54,26 @@ p {
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
 .btn-1, .btn-2, .btn-3 {
-    margin: 110px; /* add 110px margin around each button */
+    display: inline-block;
+    margin: 40px; /* add 110px margin around each button */
    
   }
 
+  /* Add a container to wrap the buttons and center them */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto; /* adjust margin to create space above and below */
+}
+
 .btn-1 {background-color: rgb(151, 8, 212);
-    color: rgb(2, 44, 46);
+    color: rgb(219, 229, 230);
     font-size:  15px;
     position: relative;
     display: inline-block;
     padding: 25px;
     justify-content: space-between;
-    transform-style: var(rgb(203, 112, 123));
+    transform-style: preserve-3d(rgb(203, 112, 123));
     transition: transform 0.5s, box-shadow 0.5s; /* add transition effect */
     border: 2px solid #4a0942
 
@@ -124,9 +132,8 @@ border: none; /* Remove the default border */
     box-shadow: 0 0 20px rgba(255, 255, 0, 0.8); /* Change the glow color on hover */
      content: "";
      background: linear-gradient(
-        45deg,blue,rgb(28, 215, 28),orange,purple,red
-     );
-     position: absolute;
+        45deg,blue,rgb(28, 215, 28),orange,purple,red);
+     position: relative;
      z-index: -1px;
     
   }
